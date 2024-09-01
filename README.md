@@ -1,6 +1,20 @@
 # Curso Linuxtips de Arquitetura de Containers
 
-1.  Criação da VPC através do modulo vpc próprio - Day 1
+* Day 1 - Arquitetura de VPC - Optei por criar um módulo para a VPC -  https://github.com/jhtoigo/terraform-aws-vpc
+
+
+## Como utilizar
+
+```sh
+# Inicializa o terraform
+$ terraform init --backend-config=environment/dev/backend.tfvars
+
+# Cria e atualiza
+$ terraform apply -var-file environment/dev/terraform.tfvars
+
+# Destroi
+$ terraform apply -var-file environment/dev/terraform.tfvars
+ ```
 
 
 <!-- BEGIN_TF_DOCS -->
